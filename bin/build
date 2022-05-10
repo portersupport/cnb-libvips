@@ -5,6 +5,9 @@
 # fail fast and loudly
 set -euo pipefail
 
+echo $0 $1 
+echo $CNB_BUILDPACK_DIR
+
 BUILD_DIR="."
 CACHE_DIR=$1
 ENV_DIR="$CNB_PLATFORM_DIR/env/"
