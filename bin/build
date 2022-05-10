@@ -6,7 +6,18 @@
 set -euo pipefail
 
 echo $0 $1 
+
+echo "\$0 contents:"
+ls $0
+
+echo "\$1 contents:"
+ls $1
 echo $CNB_BUILDPACK_DIR
+
+echo "CNB_BUILDPACK_DIR contents:"
+ls $CNB_BUILDPACK_DIR
+
+echo $CNB_PLATFORM_DIR
 
 BUILD_DIR="."
 CACHE_DIR=$1
