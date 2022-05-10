@@ -5,23 +5,9 @@
 # fail fast and loudly
 set -euo pipefail
 
-echo $0 $1 
-
-echo "\$0 contents:"
-ls $0
-
-echo "\$1 contents:"
-ls $1
-echo $CNB_BUILDPACK_DIR
-
-echo "CNB_BUILDPACK_DIR contents:"
-ls $CNB_BUILDPACK_DIR
-
-ls /platform
-
 BUILD_DIR="."
 CACHE_DIR=$1
-ENV_DIR="$CNB_PLATFORM_DIR/env/"
+ENV_DIR="/platform/env/"
 TMP_DIR="$BUILD_DIR/.libvips-tmp"
 BP_DIR=$CNB_BUILDPACK_DIR
 VENDOR_PATH="$BUILD_DIR/.heroku"
