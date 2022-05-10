@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Usage: compile <BUILD_DIR> <CACHE_DIR> <ENV_DIR>
+
+# fail fast and loudly
+set -euo pipefail
+
+BUILD_DIR="."
+CACHE_DIR=$1
+ENV_DIR="$CNB_PLATFORM_DIR/env/"
+TMP_DIR="$BUILD_DIR/.libvips-tmp"
+BP_DIR=$CNB_BUILDPACK_DIR
+VENDOR_PATH="$BUILD_DIR/.heroku"
+VIPS_PATH="$VENDOR_PATH/vips"
+
+source "$BP_DIR/bin/buildscript.sh"
+
+ensure_dirs
+install_libvips
+cleanup_build
+export_profile
