@@ -18,4 +18,4 @@ source "$BP_DIR/bin/buildscript.sh"
 ensure_dirs
 install_libvips
 cleanup_build
-export_profile
+# export_profile
