@@ -20,7 +20,9 @@ cleanup_build() {
 
 export_profile() {
   mkdir -p $BUILD_DIR/.profile.d
-  cp $BP_DIR/.profile.d/* $BUILD_DIR/.profile.d/
+  # cp $BP_DIR/.profile.d/* $BUILD_DIR/.profile.d/
+
+  cp $VIPS_PATH/.profile.d/* $BUILD_DIR/.profile.d/
 }
 
 install_libvips() {
