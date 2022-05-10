@@ -17,7 +17,7 @@ echo $CNB_BUILDPACK_DIR
 echo "CNB_BUILDPACK_DIR contents:"
 ls $CNB_BUILDPACK_DIR
 
-echo $CNB_PLATFORM_DIR
+ls /platform
 
 BUILD_DIR="."
 CACHE_DIR=$1
