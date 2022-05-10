@@ -97,5 +97,5 @@ configure_and_compile() {
 cache_build() {
   echo "Caching binaries" | indent
 
-  cp -R "$VIPS_PATH/." "$CACHE_DIR/$LIBVIPS_VERSION"
+  # cp -R "$VIPS_PATH/." "$CACHE_DIR/$LIBVIPS_VERSION"
 }
