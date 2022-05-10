@@ -10,7 +10,7 @@ CACHE_DIR=$1
 ENV_DIR="/platform/env/"
 TMP_DIR="$BUILD_DIR/.libvips-tmp"
 BP_DIR=$CNB_BUILDPACK_DIR
-VENDOR_PATH="$BUILD_DIR/.heroku"
+VENDOR_PATH="$BUILD_DIR"
 VIPS_PATH="$VENDOR_PATH/vips"
 
 source "$BP_DIR/bin/buildscript.sh"
